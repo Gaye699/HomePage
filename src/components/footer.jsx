@@ -16,15 +16,6 @@ export default function Footer() {
 		<footer className="site-footer" role="contentinfo">
 			<div className="footer-container">
 				<div className="footer-brand">
-					<div className="logo" aria-hidden>
-						{/* Petit logo ballon */}
-						<svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<circle cx="12" cy="12" r="10" fill="#0b6b3a" />
-							<path d="M12 3v4" stroke="#fff" strokeWidth="1.2" strokeLinecap="round" />
-							<path d="M4 12h4" stroke="#fff" strokeWidth="1.2" strokeLinecap="round" />
-							<path d="M20 12h-4" stroke="#fff" strokeWidth="1.2" strokeLinecap="round" />
-						</svg>
-					</div>
 					<div>
 						<h2>Coupe d'Afrique des Nations</h2>
 						<p className="muted">Toute l'actualité, les résultats et l'histoire de la CAN.</p>
@@ -33,9 +24,9 @@ export default function Footer() {
 
 				<nav className="footer-nav" aria-label="Liens rapides">
 					<ul>
-						<li><a href="/actualites">Actualités</a></li>
-						<li><a href="/calendrier">Calendrier</a></li>
-						<li><a href="/resultats">Résultats</a></li>
+						<li><a href="/news">New</a></li>
+						<li><a href="/videos">Calendrier</a></li>
+						<li><a href="/calenrier">Calendrier</a></li>
 						<li><a href="/equipes">Équipes</a></li>
 					</ul>
 				</nav>
