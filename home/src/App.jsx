@@ -6,10 +6,11 @@ import viteLogo from '/vite.svg'
 import React from 'react'
 import './App.css'
 import Navbar from './components/navbar'
+import Body from './components/Body'
 
 function App() {
   return (
-    <Body />
+    
     <Navbar/>
   )
 }
