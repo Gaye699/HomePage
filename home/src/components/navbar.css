@@ -1,0 +1,125 @@
+.navbar {
+  background: linear-gradient(to right, #a92929, #8b1f1f);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+.navbar-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 75px;
+  gap: 4rem;
+  padding: 0 3rem;
+}
+
+/* Logo */
+.navbar-logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: none;
+  gap: 3.5rem;
+  align-items: center;
+  flex: 1;
+}
+
+.navbar-links a {
+  color: white;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  position: relative;
+}
+
+.navbar-links a:hover {
+  color: #f0f0f0;
+  transform: translateY(-1px);
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+/* Mobile menu button */
+.navbar-mobile-btn {
+  display: block;
+  margin-left: auto;
+}
+
+.navbar-mobile-btn button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-mobile-btn button:hover {
+  color: #e5e7eb;
+}
+
+.navbar-mobile-btn svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+  .navbar-links {
+    display: flex;
+  }
+  
+  .navbar-mobile-btn {
+    display: none;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1200px) {
+  .navbar-content {
+    padding: 0 5rem;
+    gap: 5rem;
+  }
+  
+  .navbar-links {
+    gap: 4rem;
+  }
+  
+  .navbar-links a {
+    font-size: 1.1rem;
+  }
+}
